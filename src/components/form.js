@@ -29,7 +29,7 @@ const Form = () => {
     return(
       <div className="Container">
         <input type="text" value={state.text} name="taskname" id="taskname" placeholder="Add task" onChange={handleChange} />
-        <button className="btn btn2" type="submit" onClick={handleAdd} >Add</button>
+        <button className="newbtn btn2" type="submit" onClick={handleAdd} >Add</button>
       </div>
     );
 }

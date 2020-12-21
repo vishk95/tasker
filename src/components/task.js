@@ -11,7 +11,7 @@ const Task = (props) => {
     return(
       <div className="taskContainer"><hr/>
         <li className="task">{props.taskname} {/*props.id*/}</li>
-        <button className="btn" onClick={handleDelete} >&#x2716;</button>
+        <button className="newbtn" onClick={handleDelete} >&#x2716;</button>
       </div>
     );
 }

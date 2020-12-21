@@ -8,11 +8,13 @@ const TaskList = () => {
     return(
       <div id="listContainer">
             <ul>
-              {tasks.length > 0 ? (tasks.map(obj => (
-                <div>
+              {tasks.length > 0 ? 
+              (tasks.map(obj => (
+                <div key={obj.id} >
                   <Task id={obj.id} taskname={obj.taskname} />
                 </div>
-              ))) : <div className="icon"><i class="fas fa-pencil-alt fa-5x"></i><span></span></div>}
+              ))) : 
+              <div className="icon"><i className="fas fa-pencil-alt fa-3x"/></div>}
             </ul>
       </div>
     );

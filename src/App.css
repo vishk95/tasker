@@ -14,7 +14,7 @@ body {
 
 .Nav {
   color: white;
-  width: 100vw;
+  min-width: 100vw;
   height: 10vh;
   font-size: 2em;
   background: #ce6088;
@@ -99,7 +99,7 @@ hr {
   list-style-type: none;
 }
 
-.btn{
+.newbtn{
   border: none;
   color: white;
   margin-left: auto;
@@ -115,13 +115,13 @@ hr {
 }
 
 .btn2 {
-  margin-left: 0;
+  margin-left: -1px;
   border-radius: 0px;
   font-size: 1rem;
   outline: none;
 }
 
-.btn:hover {
+.newbtn:hover {
   background-color: white; 
   color: #067183;
 }

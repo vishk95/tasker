@@ -1,13 +1,20 @@
+import React from 'react';
 import './App.css';
-import AddTask from "./components/additem";
+import Nav from "./components/nav.js"
+import Form from "./components/form.js"
+import TaskList from "./components/tasklist.js"
+import {TaskProvider} from "./taskcontext"
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <h1>Todo list</h1>
-      </div>
-      <AddTask/>
+      <TaskProvider>
+        <div className="App">
+          <Nav/>
+          <Form/>
+          <TaskList/>
+        </div>
+      </TaskProvider>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 # A better Todo List React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Click here!](https://codepen.io/vishk95/pen/oNzezLP) for a preview of the frontend of this application.
 
 ## Available Scripts
 

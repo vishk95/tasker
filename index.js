@@ -78,7 +78,9 @@ app.delete("/list/:id", async (req, res) => {
     res.send(`Deleted ${id}`);
 });
 
-app.use(express.static(path.join(__dirname, '../todolist-client/build')))
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "todolist-client", "build", "index.html"));
+});
 
 // Start server.............................................
 app.listen(PORT, () => {

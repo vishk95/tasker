@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+  background: #dddddd;
+}
+
+.App {
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.Nav {
+  color: white;
+  min-width: 100vw;
+  height: 10vh;
+  font-size: 2em;
+  background: #ce6088;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 20px 0;
+  padding: 0 0 5px 0;
+}
+
+.Container {
+  margin: 0 10vw 10px 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+.Container input {
+  font-size: 1rem;
+  width: 100%;
+  border: 2px solid #ce6088;
+  border-radius: 0;
+  padding: 0 10px;
+  color: #067183; 
+  transition-duration: 0.4s;  
+}
+
+.Container input:focus {
+  outline: none;
+  background: #067182;
+  color: white;
+}
+
+.Container input:focus::placeholder{
+  color: white;
+  opacity: 0.8;
+}
+
+#listContainer {
+  margin: 0 10vw;
+  text-align: left;
+  display: grid;
+  align-items: center;
+}
+
+#listContainer ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  align-items: center;
+}
+
+.icon{
+  margin: 20vh;
+  display: grid;
+  opacity: 0.6;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskContainer{
+  margin: 5px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0px;
+  background: #067183;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.taskContainerFront{
+  margin: 5px 0;
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-end;
+}
+
+hr {
+   width: 20px;
+   height: 1vh;
+   border: none;
+   border-radius: 3px;
+   margin-right: 10px;
+   margin-left: -20px;
+   background-color: #dddddd;
+}
+.task{
+  list-style-type: none;
+}
+
+.newbtn{
+  border: none;
+  color: white;
+  margin-left: auto;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  background-color: #ce6088;
+  border-radius: 50%;
+  transition-duration: 0.4s;
+  outline: none;
+}
+
+.btn2 {
+  margin-left: -1px;
+  font-size: 2rem;
+  border-radius: 0px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.newbtn:hover {
+  background-color: white; 
+  color: #067183;
+}
+
+.btn2:hover {
+  background-color: #067183; 
+  color: white;
+}

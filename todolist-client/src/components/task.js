@@ -12,7 +12,7 @@ const Task = (props) => {
 
       axios({
         method: 'delete',
-        url: `http://localhost:5000/list/${id}`
+        url: `/list/${id}`
       });
       console.log(`Deleting ${id}`)
     }
@@ -27,7 +27,7 @@ const Task = (props) => {
 
       axios({
         method: 'put',
-        url: 'http://localhost:5000/list',
+        url: '/list',
         data: {
           taskname: newTask,
           _id: id 

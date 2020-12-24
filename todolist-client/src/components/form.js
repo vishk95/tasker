@@ -28,7 +28,7 @@ const Form = () => {
       
       axios({
         method: 'post',
-        url: 'http://localhost:5000/list',
+        url: '/list',
         data: {
           taskname: temp[temp.length-1].taskname,
           id: temp[temp.length-1].id 

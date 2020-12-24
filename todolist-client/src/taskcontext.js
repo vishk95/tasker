@@ -8,7 +8,7 @@ export const TaskProvider = (props) => {
     axios({
       method: "get",
       withCredentials: true,
-      url: "http://localhost:5000/list"
+      url: "/list"
 
     }).then((res) => {
       setTasks(res.data)

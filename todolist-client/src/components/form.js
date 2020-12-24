@@ -1,5 +1,6 @@
 import React,{useState, useContext} from 'react';
 import {TaskContext} from '../taskcontext';
+import axios from 'axios';
 
 const Form = () => {
     const [tasks, setTasks] = useContext(TaskContext);
@@ -20,16 +21,25 @@ const Form = () => {
                 taskname: state.text,
                 id: tasks.length>0 ? tasks[tasks.length-1].id+1 : 0
                 })
-      setTasks([...temp])
+      setTasks([...temp]);
       setState({
         text: ""
-        })
-      }
+      });
+      
+      axios({
+        method: 'post',
+        url: 'http://localhost:5000/list',
+        data: {
+          taskname: temp[temp.length-1].taskname,
+          id: temp[temp.length-1].id 
+        }
+      });
+    }
       
     return(
       <div className="Container">
         <input type="text" value={state.text} name="taskname" id="taskname" placeholder="Add task" onChange={handleChange} />
-        <button className="newbtn btn2" type="submit" onClick={handleAdd} >Add</button>
+        <button className="newbtn btn2" type="submit" onClick={handleAdd} >+</button>
       </div>
     );
 }

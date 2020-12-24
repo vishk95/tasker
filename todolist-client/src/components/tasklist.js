@@ -11,7 +11,8 @@ const TaskList = () => {
               {tasks.length > 0 ? 
               (tasks.map(obj => (
                 <div key={obj.id} >
-                  <Task id={obj.id} taskname={obj.taskname} />
+                  {console.log(tasks)}
+                  <Task id={obj.id} taskname={obj["taskname"]} _id={obj._id}/>
                 </div>
               ))) : 
               <div className="icon"><i className="fas fa-pencil-alt fa-3x"/></div>}

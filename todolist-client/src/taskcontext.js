@@ -1,17 +1,25 @@
-import React,{createContext} from 'react';
+import axios from 'axios';
+import React,{createContext ,useEffect} from 'react';
 
 export const TaskContext = createContext();
 export const TaskProvider = (props) => {
+  
+  useEffect(() => {
+    axios({
+      method: "get",
+      withCredentials: true,
+      url: "http://localhost:5000/list"
+
+    }).then((res) => {
+      setTasks(res.data)
+    });
+  }, []);
+
   const [tasks, setTasks] = React.useState([
-    {
-      taskname: "New task created inside context.",
-      id: 1,
-    },
-    {
-      taskname: "2nd task created inside context.",
-      id: 2,
-    }
+    {}
   ]);
+
+
   return(
     <TaskContext.Provider value={[tasks, setTasks]}>
       {props.children}

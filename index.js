@@ -32,7 +32,7 @@ app.use(
     credentials: true,
   })
 );
-
+app.use(express.static(path.join(__dirname, "todolist-client", "build")))
 
 // Routes...................................................
 app.get("/list", (req, res) => {

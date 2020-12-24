@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require('path')
 // const passport = require("passport");
 // const passportLocal = require("passport-local").Strategy;
 // const cookieParser = require("cookie-parser");

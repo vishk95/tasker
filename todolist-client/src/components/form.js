@@ -14,7 +14,8 @@ const Form = () => {
       })
     }
     
-    const handleAdd = () => {
+    const handleAdd = (e) => {
+      e.preventDefault()
       if (!state.text) return;
       let temp = [...tasks]
       temp.push({

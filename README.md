@@ -18,7 +18,7 @@ Include logo/demo screenshot etc.
 - [MongoDB](https://www.mongodb.com/)
 
 ## Features
-User authentication support with OAuth 2.0
+User authentication support with OAuth 2.0 (in development)
 
 ## How to use?
 - Visit [Here.](https://frozen-shore-08585.herokuapp.com/)
